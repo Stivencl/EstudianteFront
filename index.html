@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+      Estudiantes
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Gestion de estudiantes</h1>
+    <h2>Crear nuevo estudiante</h2>
+    <form action="">
+    <input type="text" id="identificacion" placeholder="TI o RG o CC" >
+    <input type="text" id="name" placeholder="Nombre completo">
+    <button onclick="crearEstudiante()">Crear Estudiante</button>
+  </form>
+    <h2>Listado de estudiantes</h2>
+    <div id="estudiantelista"></div>
+    <dialog id="modal">
+        <h2>Actualizar Estudiante</h2>
+        
+          <input type="text" id="identificacion2" value ="">
+          <input type="text" id="name2" value="">
+          <div id="btn-cont">
+            
+              <button id="btn-Cerrar">Cancelar</button>
+              <div id="btn-actu"></div>
+          
+          
+         </div>
+        
+    </dialog>
+    <script src="script.js"></script>
+</html>

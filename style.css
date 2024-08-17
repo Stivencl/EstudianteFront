@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+form{
+    margin-bottom: 20px;
+}
+input{
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(69, 2, 131);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td{
+    border: 1px solid black;
+
+}
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+th{
+    background-color: rgb(101, 135, 230);
+    color: rgb(105, 104, 104);
+}
+td{
+    background-color: rgb(250, 207, 143);
+}
+
+.delete-btn{
+    background-color: brown;
+    color: bisque;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.delete-btn:hover{
+    background-color: rgb(238, 133, 133);
+}
+
+.update-btn{
+
+    background-color: rgb(4, 39, 92);
+    color: aliceblue;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.update-btn:hover{
+    background-color: rgb(43, 129, 241);
+}
+/*modal propiedades*/
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
+}
+#modal{
+    max-width: 60ch;
+}
+
+#btn-cont{
+    display: flex;
+    margin-left: 110px;
+    margin-top: 5px;
+      
+}
+#btn-cont button{
+    margin-left: 10px;
+}
+
+
