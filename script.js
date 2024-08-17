@@ -84,7 +84,7 @@ async function eliminarEstudiante(id){
     }
     try {
         const response = await fetch(
-            `https://estudiantebackend.onrender.com/${id}`,
+            `https://estudiantebackend.onrender.com/estudiante/${id}`,
             {
                 method: "DELETE",
                 headers: {Authorization: "miTokensecreto123",},
@@ -120,7 +120,7 @@ async function eliminarEstudiante(id){
     }); 
 
      const response = await fetch(
-       `https://estudiantebackend.onrender.com/${id}`,
+       `https://estudiantebackend.onrender.com/estudiante/${id}`,
        {
         headers: {Authorization: "miTokensecreto123",},
        }
@@ -151,7 +151,7 @@ async function actualizarEstudiante(id) {
     try {
         
         const response = await fetch(
-            `https://estudiantebackend.onrender.com/${id}`,
+            `https://estudiantebackend.onrender.com/estudiante/${id}`,
             {
                method: "PUT",
                headers: {"Content-Type": "application/json",
