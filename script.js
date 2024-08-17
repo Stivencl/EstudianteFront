@@ -12,7 +12,7 @@ async function crearEstudiante(){
     const estudiante = {id_Estudiante: identif, nombre: name};
     try {
         const response1 = await fetch(
-            "https://estudiantes-qhc5.onrender.com/estudiante",
+            "https://estudiantebackend.onrender.com/estudiante",
             {
                method: "POST",
                headers: {"Content-Type": "application/json",
@@ -42,7 +42,7 @@ async function crearEstudiante(){
 async function consultarEstudiante(){
     try {
         const response = await fetch(
-           "https://estudiantes-qhc5.onrender.com/estudiante", 
+           "https://estudiantebackend.onrender.com/estudiante", 
         );
         if(!response.ok){
             throw new Error("No se pudo obtener la lista de estudiantes.");
@@ -84,7 +84,7 @@ async function eliminarEstudiante(id){
     }
     try {
         const response = await fetch(
-            `https://estudiantes-qhc5.onrender.com/${id}`,
+            `https://estudiantebackend.onrender.com/${id}`,
             {
                 method: "DELETE",
                 headers: {Authorization: "miTokensecreto123",},
@@ -120,7 +120,7 @@ async function eliminarEstudiante(id){
     }); 
 
      const response = await fetch(
-       `https://estudiantes-qhc5.onrender.com/${id}`,
+       `https://estudiantebackend.onrender.com/${id}`,
        {
         headers: {Authorization: "miTokensecreto123",},
        }
@@ -151,7 +151,7 @@ async function actualizarEstudiante(id) {
     try {
         
         const response = await fetch(
-            `https://estudiantes-qhc5.onrender.com/${id}`,
+            `https://estudiantebackend.onrender.com/${id}`,
             {
                method: "PUT",
                headers: {"Content-Type": "application/json",
